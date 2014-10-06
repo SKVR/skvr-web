@@ -3,10 +3,9 @@
         "ivko/skvr-web": {
             "dev-master": {
                 "name": "ivko/skvr-web",
-                "version": "dev-master",
                 "dist": {
-                    "type": "vcs",
-                    "url": "https://github.com/ivko/skvr-web"
+                    "type": "git",
+                    "url": "https://github.com/ivko/skvr-web.git"
                 }
             }
         }
