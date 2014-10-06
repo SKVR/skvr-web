@@ -28,6 +28,3 @@ codecept.phar
 
 # npm
 node_modules/*
-
-# vagrant
-.vagrant/
