@@ -5,7 +5,7 @@ skvr-web
 
  * Set up Git by following the instructions [here](https://help.github.com/articles/set-up-git).
  * Download and install Composer by following the instructions [here](http://getcomposer.org/download/).
- * Run `git clone https://github.com/ivko/skvr-web.git skvr-web` and git will clone the project for you.
+ * Run `git clone https://github.com/SKVR/skvr-web.git skvr-web` and git will clone the project for you.
  * Go to project root `cd skvr-web` and run `composer.phar install` and composer will install the project.
  * Run `app/yiic environment dev` to activate the development environment.
  * Update the configurations in `app/config` to suit your needs.
