@@ -11,7 +11,8 @@ skvr-web
  * Update the configurations in `app/config` to suit your needs.
  * Download and install Node.js by following the instructions here [here](https://github.com/joyent/node/wiki/Installing-Node.js-via-package-manager).
  * Run `npm install` to download the Node.js dependencies.
- * Start Grunt by running `grunt` (`npm install grunt-run`?)and it will compile your LESS and deploy your JavaScript files.
+ * Run `npm install -g grunt-cli`
+ * Start Grunt by running `grunt` and it will compile your LESS and deploy your JavaScript files.
  * You're done! Navigate to `web/index.php` to see your application.
 
 For more information on Composer and Grunt:
