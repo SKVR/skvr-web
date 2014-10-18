@@ -2,7 +2,7 @@ skvr-web
 =======
 
 ## Setup
-
+ * Setup MySQL, Apache and PHP as described [here](https://docs.moodle.org/27/en/Manual_install_on_Windows_7_with_Apache_and_MySQL#Step_3:_Install_PHP)
  * Set up Git by following the instructions [here](https://help.github.com/articles/set-up-git).
  * Download and install Composer by following the instructions [here](http://getcomposer.org/download/).
  * Run `git clone https://github.com/SKVR/skvr-web.git skvr-web` and git will clone the project for you.
