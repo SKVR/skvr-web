@@ -15,11 +15,8 @@
                     array('label' => 'About', 'url' => array('/site/page', 'view' => 'about')),
                     array('label' => 'Contact', 'url' => array('/site/contact')),
                     array('label' => 'Login', 'url' => array('/site/login'), 'visible' => user()->isGuest),
-                    array(
-                        'label' => 'Logout (' . user()->name . ')',
-                        'url' => array('/site/logout'),
-                        'visible' => !user()->isGuest
-                    )
+                    array('label' => 'Posts', 'url' => array('/posts/index'), 'visible' => !user()->isGuest),
+                    array('label' => 'Logout (' . user()->name . ')', 'url' => array('/site/logout'), 'visible' => !user()->isGuest)
                 ),
             ),
             // uncomment the following if your application is multilingual
@@ -44,8 +41,21 @@
         ); ?>
     <?php endif ?>
 
-    <?php echo $content; ?>
-
+    <?php if (count($this->menu) > 0): ?>
+        <div class="row-fluid">
+            <div class="span2">
+                <?php $this->widget('bootstrap.widgets.TbNav', array(
+                    'type' => TbHtml::NAV_TYPE_TABS,
+                    'items' => $this->menu,
+                )); ?>
+            </div>
+            <div class="span10">
+                <?php echo $content; ?>
+            </div>
+        </div>
+    <?php else:?>
+        <?php echo $content; ?>
+    <?php endif;?>
     <hr/>
 
     <div id="footer">
